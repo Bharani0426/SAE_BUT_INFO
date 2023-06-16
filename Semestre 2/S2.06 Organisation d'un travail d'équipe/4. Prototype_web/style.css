@@ -1,0 +1,186 @@
+/* Police de la page */
+*{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+
+/* BarNav */
+nav{
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+.pageAct{
+  color: #ffbf00;
+}
+
+.oursNav{
+  width: 5%;
+}
+
+nav ul li:hover a{
+  color:#555;
+  transition: 0.2s all;
+}
+
+nav ul {
+  font-size: 20px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 15px;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+/* Programme */
+.Event{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.mySlides {
+  display:none;
+}
+
+.flècheL{
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 1.5em;
+  border: 0;
+  position: absolute;
+  left: 25em;
+  top: 50em;
+  cursor: pointer;
+}
+
+.flècheR{
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 1.5em;
+  border: 0;
+  position: absolute;
+  right: 25em;
+  top: 50em;
+  cursor: pointer;
+}
+
+.flècheL:hover, .flècheR:hover{
+  background-color: #ffbf00;
+  transition: 0.5s all;
+}
+
+.text{
+  padding: 50px;
+  text-align: center;
+}
+
+/* team */
+.Team{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+
+section {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+.artiste, .sculpture {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.artiste:hover, .sculpture:hover , .Event:hover{
+  transform: translateY(-5px);
+}
+
+.artiste img, .sculpture img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #222;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}  
