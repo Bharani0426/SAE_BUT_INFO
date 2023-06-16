@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blue Note Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#hautdepage" class="w3-bar-item w3-button">Blue Note</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#cal" class="w3-bar-item w3-button">Calendrier</a>
+      <a href="#plats" class="w3-bar-item w3-button">Nos plats</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact / Commentaires</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="hautdepage">
+  <img class="w3-image" src="Images/Image1.0.png" alt="Image 1" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Cal Section -->
+  <div class="w3-row w3-padding-64" id="cal">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="Images/cal dec.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Calendrier</h1><br>
+      <h5 class="w3-center">Le calendrier des artistes qui viendront vous divertir</h5>
+      <p class="w3-large">Blue Note est un restaurant innovant des autres. En effet, 
+	  avec nos plats succulents qui viennent de plusieurs continents, nous avons eu la merveilleuse
+	  idée de vous divertir et vous mettre dans un confort tout en gardant l'ambiance conviviale afin de passer un excellent moment 
+	  avec vos proches.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">C'est pour cela que nous avons eu l'idée de faire venir des artistes 
+	  très connus comme Airelle Besson (vainqueur du prix de Django Reinhardt) ou encore le fabuleux Thomas Encho. 
+	  Nous donnons également la chance à la jeunesse qui se lance dans ce monde. Ces artistes vous accompagneront tout au long 
+	  de votre repas, de l'entrée jusqu'au déssert.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- plats Section -->
+  <div class="w3-row w3-padding-64" id="plats">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Notre Classique</h1><br>
+      <h4>Salade de chèvre chaud</h4>
+      <p class="w3-text-grey">Salade, tomates, fromage de chèvre 
+	  amandes effilées, oignons </p><br>
+    
+      <h4>Enchiladas</h4>
+      <p class="w3-text-grey">Farce de poulet, sauce salsa, entourée d'une tortillas au mais  </p><br>
+    
+      <h4>Le Normand</h4>
+      <p class="w3-text-grey">Camembert Isigny rôti farci aux lardons, oignons ou lardons, oignons confits  </p><br>
+    
+      <h4>Burger Dodge</h4>
+      <p class="w3-text-grey">Viande hachée, cheddar, bacon, raclette, sauce moutarde  </p><br>
+    
+      <h4>Wraps poulet</h4>
+      <p class="w3-text-grey">Poulet croustillant, ketchup, oignons, salade, bacon, cheddar  </p>    
+	  
+	  <h4>Notre Carte</h4>
+	  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Carte</button>
+
+  <div id="id01" class="w3-modal w3-center">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <img src="Images/carte.jpg">
+      </div>
+    </div>
+  </div>
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="Images/image sc.jpg" class="w3-round w3-image w3-opacity-min">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact / Commentaires</h1><br>
+    <p>Notre établissement aime connaitre le ressenti du client après un repas passé chez nous. Cette rubrique existe pour que vous puissez partager votre epxérience.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Voici notre adresse : 3 Av. Jean Baptiste Clément</b></p>
+    <p>Vous pouvez également nous contacter par téléphone : 06.34.03.19.05   Mais aussi par e-mail : iutv-info-creip[at]univ-paris13.fr  </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Quel a été votre plat favori ?" required name="plat"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Combien d'artistes aviez vous vu aujourd'hui ?" required name="nombres"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="A quel heure aviez été au Blue Note ? " required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Des renseignements supplémentaires ?" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">Envoyez votre message</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Fait par Bharani - INDRA</p>
+</footer>
+
+</body>
+</html>
